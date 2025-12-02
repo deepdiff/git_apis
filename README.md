@@ -25,6 +25,11 @@ This project uses the GitHub CLI (`gh`) for authentication and API interactions.
    gh api <endpoint>
    ```
 
+## Examples
+
+- `examples/basic_api_example.py` - Basic REST API usage
+- `examples/graphql_example.py` - GraphQL API examples
+
 ## Resources
 
 - [GitHub REST API Documentation](https://docs.github.com/en/rest)
