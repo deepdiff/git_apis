@@ -51,6 +51,16 @@ def list_repos(username=None):
     endpoint = f"users/{username}/repos" if username else "user/repos"
     return call_gh_api(endpoint)
 
+def get_repo_info(owner, repo):
+    """Get information about a specific repository."""
+    endpoint = f"repos/{owner}/{repo}"
+    return call_gh_api(endpoint)
+
+def list_branches(owner, repo):
+    """List branches for a repository."""
+    endpoint = f"repos/{owner}/{repo}/branches"
+    return call_gh_api(endpoint)
+
 if __name__ == "__main__":
     print("GitHub API Experiment - Basic Example")
     print("=" * 40)
